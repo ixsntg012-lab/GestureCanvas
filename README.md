@@ -73,9 +73,11 @@ Masters in CS student @ University of Central Florida, Oviedo FL. I build AI sys
 
 <div align="center">
 
-![Swetha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ixsntg012-lab&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Swetha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ixsntg012-lab&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&cache_seconds=1800)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ixsntg012-lab&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ixsntg012-lab&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=ixsntg012-lab&theme=tokyonight&hide_border=true)
 
 </div>
 
