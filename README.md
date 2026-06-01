@@ -1,185 +1,90 @@
-# GestureCanvas 🎨
-
 <div align="center">
 
-**Real-time AR Hand Gesture Drawing System**
+# Hi, I'm Swetha Kiran Veernapu! 👩‍💻
 
-*Draw, erase, transform — entirely with hand gestures. No mouse. No stylus. No touch.*
+**AI/ML Engineer | Masters CS @ UCF | Python · OpenCV · Scikit-learn · Flask · LangChain**
 
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand_Tracking-0097A7?style=for-the-badge)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv)
-![NumPy](https://img.shields.io/badge/NumPy-Rendering-013243?style=for-the-badge&logo=numpy)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swetha-kiran-veernapu)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ixsntg012-lab)
 
 </div>
 
 ---
 
-## What is GestureCanvas?
+## About Me
 
-GestureCanvas is a real-time augmented reality drawing application controlled entirely by hand gestures — captured through a standard webcam. Drawings are rendered with neon glow effects directly on top of the live camera feed using a transparent overlay pipeline.
+Masters in CS student @ University of Central Florida, Oviedo FL. I build AI systems that solve real communication and accessibility challenges — from sign language recognition to LLM-powered interview tools.
 
-No special hardware. No physical contact required.
-
-> **Use cases:** Touchless annotation in medical/industrial settings, immersive AR drawing, accessibility tools, interactive education displays.
-
----
-
-## Gestures
-
-| Gesture | Action |
-|---------|--------|
-| ☝️ Index finger only | **DRAW** — draw freely with fingertip |
-| ✌️ Index + Middle fingers | **ERASE** — erase with fingertip |
-| 🤏 Pinch (one hand) | **GRAB** — select and drag any stroke |
-| 🤏🤏 Pinch (both hands) | **TRANSFORM** — zoom and rotate selected stroke |
-| ✌✌ Two fingers (both hands) | **THICKNESS** — spread to increase, close to decrease |
-| 🖐️ Open palm | Stop drawing / idle |
+- 🎯 Seeking **AI/ML Engineering internship** (Summer/Fall 2025) and **full-time role** (Dec 2026)
+- 🔨 Currently building: **Mental Health RAG Chatbot** using LangChain + ChromaDB
+- 📚 Learning: **PyTorch · LangChain · RAG Pipelines · Vector Databases**
+- 📍 Oviedo, FL — open to remote and hybrid roles
 
 ---
 
-## Features
+## 🚀 Featured Projects
 
-| Feature | Description |
-|---------|-------------|
-| Real-time hand tracking | MediaPipe 21-keypoint landmark detection at 30fps |
-| Gesture-based mode switching | Draw, Erase, Grab, Transform — all gesture controlled |
-| Neon glow rendering | Multi-layer Gaussian blur composited over live camera feed |
-| Shape auto-detection | Freehand strokes snap to circle, rectangle, triangle, or line |
-| Stroke manipulation | Move, zoom, rotate any stroke via pinch gestures |
-| Partial stroke erase | Eraser splits freehand strokes — only touched segment removed |
-| Undo / Redo | 60-step stack-based history |
-| PNG export | Save drawing + camera frame as PNG |
-| Session recording | Record full drawing session as AVI video |
-| Live thickness control | Two-hand spread gesture adjusts brush size in real time |
+| 🏆 Project | 💡 What it does | 🛠 Tech | 🔗 |
+|---|---|---|---|
+| 📈 **MarketPulse** | AI stock sentiment analyzer with real-time news + ML prediction | Groq AI, yfinance, Scikit-learn, Streamlit | [GitHub](https://github.com/ixsntg012-lab/MarketPulse-) · [**Live Demo** 🚀](https://swetha-marketpulse.streamlit.app) |
+| 🤟 **SignBridge** | Real-time ASL fingerspelling — **98.96% accuracy** | MediaPipe, OpenCV, Scikit-learn | [GitHub](https://github.com/ixsntg012-lab/SignBridge) |
+| 🎨 **GestureCanvas** | AR hand gesture drawing — no mouse/stylus needed, 6 gesture modes, shape auto-detection | MediaPipe, OpenCV, NumPy | [GitHub](https://github.com/ixsntg012-lab/GestureCanvas) |
+| 🎤 **AI Mock Interview** | AI-powered interview practice with instant scoring | Flask, Gemini API | [GitHub](https://github.com/ixsntg012-lab/AI-Mock-Interview) · [**Live Demo** 🚀](https://ai-mock-interview-b8z1.onrender.com) |
+| 🏀 **NBA Salary Predictor** | Predicts player salaries — RMSE $2.50M | Scikit-learn, XGBoost, Streamlit | [GitHub](https://github.com/ixsntg012-lab/nba-salary-predictor) · [**Live Demo** 🚀](https://swetha-nba-salary.streamlit.app) |
+| 😰 **Student Stress Predictor** | Predicts stress + personalized recommendations | Flask, Scikit-learn, XGBoost | [GitHub](https://github.com/ixsntg012-lab/student-stress-prediction) · [**Live Demo** 🚀](https://student-stress-prediction-ttsd.onrender.com) |
 
 ---
 
-## Rendering Pipeline
+## 🛠 Tech Stack
 
-```
-Webcam Frame (30fps)
-        │
-        ▼
-MediaPipe Hand Landmarker
-(21 hand keypoints — pixel coordinates)
-        │
-        ▼
-Gesture Classifier
-(finger-up state + pinch distance + two-hand detection)
-        │
-        ▼
-Mode Dispatch
-(DRAW / ERASE / GRAB / TRANSFORM)
-        │
-        ▼
-Stroke Engine
-(affine transforms: offset, scale, rotation per stroke)
-        │
-        ▼
-Neon Glow Renderer
-  Layer 1 — Wide blurred outer glow (Gaussian σ=6)
-  Layer 2 — Sharp color stroke
-  Layer 3 — Bright thin center line
-        │
-        ▼
-Alpha Composite over Camera Frame
-        │
-        ▼
-Display (OpenCV window)
-```
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML/CSS-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+**AI / ML**
+
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square)
+![XGBoost](https://img.shields.io/badge/XGBoost-189C1A?style=flat-square)
+![Gemini](https://img.shields.io/badge/Gemini_API-4285F4?style=flat-square&logo=google&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_API-F55036?style=flat-square)
+
+**Web & Tools**
+
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+**Currently Learning 🔥**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
 ---
 
-## Shape Auto-Detection
+## 📊 GitHub Stats
 
-Draw freehand — system automatically snaps to the nearest geometric shape when you lift your finger.
+<div align="center">
 
-| You Draw | System Detects |
-|----------|----------------|
-| Rough circle / closed loop | ⭕ Perfect circle |
-| Four-cornered closed shape | ▭ Rectangle |
-| Three-cornered closed shape | △ Triangle |
-| Roughly straight stroke | — Straight line |
-| Anything else | ✏️ Freehand (kept as drawn) |
+![Swetha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ixsntg012-lab&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-**Algorithm:** Douglas-Peucker polygon approximation to count corners + geometric heuristics (radius variance for circles, aspect ratio, start-end closure distance).
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ixsntg012-lab&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
 
 ---
 
-## Tech Stack
+<div align="center">
 
-| Component | Technology |
-|-----------|-----------|
-| Hand Tracking | MediaPipe Hand Landmarker |
-| Computer Vision | OpenCV |
-| Rendering | NumPy array ops + Gaussian blur compositing |
-| Shape Detection | Douglas-Peucker + geometric heuristics |
-| Export | OpenCV PNG write + VideoWriter (AVI) |
+*"Building AI systems that bridge gaps between people."*
 
----
+**Open to AI/ML internship and full-time opportunities — let's connect!**
 
-## Installation
-
-```bash
-git clone https://github.com/ixsntg012-lab/Gesture-Paint-UI-.git
-cd Gesture-Paint-UI-
-pip install -r requirements.txt
-python main.py
-```
-
----
-
-## Controls
-
-**Gestures (primary):** See Gestures table above.
-
-**Keyboard shortcuts:**
-
-| Key | Action |
-|-----|--------|
-| `S` | Save drawing as PNG → `exports/` |
-| `R` | Start / Stop video recording → `exports/` |
-| `Z` | Undo |
-| `Y` | Redo |
-| `Q` | Quit |
-
-**Toolbar (mouse):** 8-colour palette, brush size slider (1–30), shape selector, Undo/Redo buttons.
-
----
-
-## Project Structure
-
-```
-GestureCanvas/
-├── main.py              ← complete application
-├── hand_tracker.py      ← MediaPipe hand landmark detection
-├── gesture_utils.py     ← gesture recognition utilities
-├── requirements.txt
-├── exports/             ← PNGs and recordings saved here (auto-created)
-├── demo.png             ← screenshot
-└── README.md
-```
-
----
-
-## Limitations & Future Work
-
-- Works best with good lighting and a plain background
-- Currently supports single-hand drawing (two-hand only for transform/thickness)
-- Potential extension: multi-user collaborative drawing over network
-- Shape detection could be improved with a learned classifier for complex shapes
-
----
-
-## Author
-
-**Swetha Kiran Veernapu**
-MS Computer Science
-
----
-
-## License
-
-MIT License
+</div>
